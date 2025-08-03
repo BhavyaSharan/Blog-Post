@@ -1,0 +1,15 @@
+<body>
+    <h2>Here is your post in detail</h2>
+
+    <% if (post) { %>
+        <p>Post ID: <%= post.id %></p>
+        <div class="posts">
+            <h3 class="username">@<%= post.username %></h3>
+            <h4><%= post.content %></h4>
+        </div>
+    <% } else { %>
+        <p style="color: red;">Post not found or invalid ID.</p>
+    <% } %>
+
+  
+</body>
